@@ -44,6 +44,7 @@ You can access the API documentation (if using FastAPI) at:
 
 ```
 Mini-Project---Histopathologic-Cancer-Detection/
+├── notebook/ Experiment.ipynb  # Experiment CNN classifier
 ├── src/ api_model.py          # API implementation (FastAPI or Flask)
 ├── models/                # Directory containing the trained model and related files
 ├── data/                 # Directory for datasets
