@@ -1,0 +1,4 @@
+zipfile36
+tensorflow
+pandas
+matplotlib
