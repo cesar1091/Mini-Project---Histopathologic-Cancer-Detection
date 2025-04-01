@@ -2,3 +2,13 @@ zipfile36
 tensorflow
 pandas
 matplotlib
+uvicorn
+numpy
+scikit-learn
+seaborn
+opencv-python
+Pillow
+scipy
+tqdm
+flask
+fastapi
