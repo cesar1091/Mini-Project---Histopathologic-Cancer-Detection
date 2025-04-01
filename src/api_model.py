@@ -11,10 +11,12 @@ import logging
 from datetime import datetime
 import csv
 import io
+import pandas as pd
+from utils import f1_score 
 from typing import Optional
 
 # Initial setup
-MODEL_PATH = '../models/cnn_v1.keras'
+MODEL_PATH = '../models/cnn_v1.h5'
 LOG_FILE = '../logs/model_predictions.log'
 PERFORMANCE_CSV = '../src/model_performance.csv'
 IMAGE_SIZE = (96, 96)  # Width and height
@@ -42,7 +44,8 @@ app.add_middleware(
 @app.on_event("startup")
 async def load_model_on_startup():
     try:
-        app.state.model = load_model(MODEL_PATH)
+        # Load the saved model
+        app.state.model = load_model('../models/cnn_v1.h5', custom_objects={'f1_score': f1_score})
         logging.info(f"Model loaded successfully. Input shape: {app.state.model.input_shape}")
     except Exception as e:
         logging.error(f"Error loading model: {str(e)}")
