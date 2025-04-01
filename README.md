@@ -22,7 +22,7 @@ Histopathologic cancer detection is a critical task in the medical field. This p
 ## Project Structure
 The project repository is organized as follows:
 
-
+```
 Mini-Project---Histopathologic-Cancer-Detection/ 
   ├── notebooks/ 
   │ ├── Experiment.ipynb 
@@ -32,7 +32,7 @@ Mini-Project---Histopathologic-Cancer-Detection/
   │ ├── train.py 
   │ ├── evaluate.py 
   └── README.md
-
+```
 
 ## Dataset
 The dataset used in this project consists of histopathologic images of lymph node sections. The data is divided into training, validation, and test sets. [Include any links or references to the dataset if applicable].
