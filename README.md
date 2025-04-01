@@ -72,4 +72,3 @@ The project uses the following Python libraries:
 - `uvicorn`
 
 For the full list, see `requirements.txt`.
-
